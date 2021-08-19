@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4a6258bb-ceaa-4f38-8c13-826fd3f67372</ProjectGuid>
+    <RootNamespace>HP_5382A_Calibration</RootNamespace>
+    <AssemblyName>HP-5382A-Calibration</AssemblyName>
+    <Name>HP-5382A-Calibration</Name>
+    <InstrumentLine1>HP 5382A Frequency Counter</InstrumentLine1>
+    <PublishFileName>HP-5382A-Calibration</PublishFileName>
+    <PackageDate>2021-08-19</PackageDate>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.mc">
+      <MainProcedure>True</MainProcedure>
+      <SectionedProcedure>True</SectionedProcedure>
+    </Compile>
+    <Compile Include="Sub No Option 001.mc">
+      <MainProcedure>False</MainProcedure>
+      <SectionedProcedure>False</SectionedProcedure>
+    </Compile>
+    <Compile Include="Sub Option 001.mc">
+      <MainProcedure>False</MainProcedure>
+      <SectionedProcedure>False</SectionedProcedure>
+    </Compile>
+    <Compile Include="Sub Preamble.mc">
+      <MainProcedure>False</MainProcedure>
+      <SectionedProcedure>False</SectionedProcedure>
+    </Compile>
+  </ItemGroup>
+</Project>
